@@ -1,10 +1,11 @@
 1) Set up your Gmail account
-
+<br>
 Open your Gmail account and go to "Settings".
 Navigate to the "Accounts and Import" or "Forwarding and POP/IMAP" tab.
 Enable IMAP access and save the changes.
+<br>
 2) Configure environment variables
-
+<br>
 Open the .env file in the root directory of your Laravel project.
 Find the MAIL_MAILER variable and set it to smtp.
 Set the MAIL_HOST variable to smtp.gmail.com.
@@ -18,7 +19,7 @@ For password-   Go to your Google Account.
                 Enter a name that helps you remember where you’ll use the app password.
                 Select Generate.
                 To enter the app password, follow the instructions on your screen. The app password is the 16-character code that generates on your device.
-                Select Done.
+                Select Done.<br>
 3) composer require guzzlehttp/guzzle
 4) php artisan make:mail SendEmail
 5) make controller and routes for setup mail
