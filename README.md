@@ -1,5 +1,5 @@
+<h3>Send Mail Via Gmail SMTP</h3>
 1) Set up your Gmail account
-<br>
 Open your Gmail account and go to "Settings".
 Navigate to the "Accounts and Import" or "Forwarding and POP/IMAP" tab.
 Enable IMAP access and save the changes.
