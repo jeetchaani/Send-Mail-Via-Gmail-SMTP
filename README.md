@@ -20,6 +20,26 @@ For password-   Go to your Google Account.
                 Select Generate.
                 To enter the app password, follow the instructions on your screen. The app password is the 16-character code that generates on your device.
                 Select Done.<br>
-3) composer require guzzlehttp/guzzle
-4) php artisan make:mail SendEmail
+3) **composer require guzzlehttp/guzzle**
+
+4)** php artisan make:mail SendEmail**
+    <code>
+        public function envelope(): Envelope
+    {
+        return new Envelope(
+            subject: $this->subject,
+        );
+    }
+
+    /**
+     * Get the message content definition.
+     */
+    public function content(): Content
+    {
+        return new Content(
+            view: 'MailView',
+            with: ['name' => $this->name,'content' => $this->content],
+        );
+    }
+    </code>
 5) make controller and routes for setup mail
